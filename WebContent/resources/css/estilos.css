@@ -1,0 +1,67 @@
+@CHARSET "ISO-8859-1";
+
+.north .ui-layout-unit-content {
+	background: #e4e4e4;
+}
+
+.north .ui-layout-unit-header {
+	position: relative;
+	float: right;
+	width: 50px;
+	border: 0px;
+}
+
+.north {
+	position: inherit;
+	text-align: center;
+	font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	line-height: normal;
+	background: #e4e4e4;
+	text-align: center;
+	border: 0px;
+}
+
+.textotitulo {
+	letter-spacing: 5px; border-top : 0px;
+	padding-top: 0px;
+	border-top: 0px;
+}
+
+.textotitulo2 {
+	letter-spacing: 5px;
+	border-top: 0px;
+	padding-top: 0px;
+}
+
+.south .ui-layout-unit-content {
+	background: #e6e6e6;
+}
+
+.south {
+	text-align: justify; ]
+	font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+	font-size: 1em;
+	letter-spacing: 5px; line-height : normal;
+	background: #e6e6e6;
+	line-height: normal;
+}
+
+.formmenu {
+	position: inherit;
+}
+
+.center {
+	border: 0px;
+	width: auto;
+	height: auto;
+}
+
+.west {
+	border: 0px;
+	margin: 0px;
+	
+}

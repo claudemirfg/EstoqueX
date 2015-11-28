@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title><ui:insert name="titulo_site">EstoqueX</ui:insert></title>
+	<h:outputStylesheet library="css" name="estilos.css" />
+
+</h:head>
+<h:body>
+	<p:layout fullPage="true">
+
+		<p:layoutUnit position="north" resizable="false" styleClass="north"
+			size="100">
+			<h:outputLabel id="textotitulo" name="textotitulo"
+				styleClass="textotitulo">
+				<ui:insert name="titulo" />
+			</h:outputLabel>
+		</p:layoutUnit>
+
+		<p:layoutUnit styleClass="south" id="rodape" position="south"
+			size="50" resizable="false" collapsible="true">
+			<h:outputText value="claudemirfg@hotmail.com" />
+		</p:layoutUnit>
+		<p:megaMenu orientation="horizontal" style="margin-top:20px">
+			<p:submenu label="Abate" icon="ui-icon-check">
+				<p:column>
+					<p:submenu label="Incluir" url="#" />
+				</p:column>
+			</p:submenu>
+
+			<p:submenu label="Sports" icon="ui-icon-document">
+				<p:column>
+					<p:submenu label="Sports.1">
+						<p:menuitem value="Sports.1.1" url="#" />
+						<p:menuitem value="Sports.1.2" url="#" />
+					</p:submenu>
+					<p:submenu label="Sports.2">
+						<p:menuitem value="Sports.2.1" url="#" />
+						<p:menuitem value="Sports.2.2" url="#" />
+						<p:menuitem value="Sports.2.3" url="#" />
+					</p:submenu>
+				</p:column>
+
+				<p:column>
+					<p:submenu label="Sports.4">
+						<p:menuitem value="Sports.4.1" url="#" />
+						<p:menuitem value="Sports.4.2" url="#" />
+					</p:submenu>
+					<p:submenu label="Sports.5">
+						<p:menuitem value="Sports.5.1" url="#" />
+						<p:menuitem value="Sports.5.2" url="#" />
+						<p:menuitem value="Sports.5.3" url="#" />
+					</p:submenu>
+				</p:column>
+				<p:column>
+					<p:submenu label="Sports.7">
+						<p:menuitem value="Sports.7.1" url="#" />
+						<p:menuitem value="Sports.7.2" url="#" />
+					</p:submenu>
+				</p:column>
+			</p:submenu>
+
+			<p:submenu label="Entertainment" icon="ui-icon-pencil">
+				<p:column>
+					<p:submenu label="Entertainment.1">
+						<p:menuitem value="Entertainment.1.1" url="#" />
+						<p:menuitem value="Entertainment.1.2" url="#" />
+					</p:submenu>
+					<p:submenu label="Entertainment.2">
+						<p:menuitem value="Entertainment.2.1" url="#" />
+						<p:menuitem value="Entertainment.2.2" url="#" />
+						<p:menuitem value="Entertainment.2.3" url="#" />
+					</p:submenu>
+				</p:column>
+
+				<p:column>
+					<p:submenu label="Entertainment.4" icon="ui-icon-help">
+						<p:menuitem value="Entertainment.4.1" url="#" />
+						<p:menuitem value="Entertainment.4.2" url="#" />
+					</p:submenu>
+					<p:submenu label="Entertainment.5">
+						<p:menuitem value="Entertainment.5.1" url="#" />
+						<p:menuitem value="Entertainment.5.2" url="#" />
+						<p:menuitem value="Entertainment.5.3" url="#" />
+					</p:submenu>
+				</p:column>
+			</p:submenu>
+
+			<p:submenu label="Tech" icon="ui-icon-contact">
+				<p:column>
+					<p:submenu label="Tech.1">
+						<p:menuitem value="Tech.1.1" url="#" />
+						<p:menuitem value="Tech.1.2" url="#" />
+					</p:submenu>
+					<p:submenu label="Tech.2">
+						<p:menuitem value="Tech.2.1" url="#" />
+						<p:menuitem value="Tech.2.2" url="#" />
+						<p:menuitem value="Tech.2.3" url="#" />
+					</p:submenu>
+				</p:column>
+
+				<p:column>
+					<p:submenu label="Tech.4">
+						<p:menuitem value="Tech.4.1" url="#" />
+						<p:menuitem value="Tech.4.2" url="#" />
+					</p:submenu>
+				</p:column>
+			</p:submenu>
+
+			<p:menuitem value="Quit" url="http://www.primefaces.org"
+				icon="ui-icon-close" />
+		</p:megaMenu>
+		<p:layoutUnit position="center" styleClass="center">
+			<ui:insert name="corpo" />
+		</p:layoutUnit>
+		<h:form>
+			<ui:insert name="dialog" />
+		</h:form>
+
+	</p:layout>
+</h:body>
+</html>
