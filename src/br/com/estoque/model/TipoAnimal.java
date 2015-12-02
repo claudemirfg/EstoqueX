@@ -1,6 +1,6 @@
 package br.com.estoque.model;
 
-public enum Tipo {
+public enum TipoAnimal {
 	MACHO, FÊMEA;
 
 }

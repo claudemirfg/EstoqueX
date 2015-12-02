@@ -36,8 +36,13 @@ public class Abate {
 	private int quantidadeAbate;
 
 	@Column(nullable = false)
-	private Double pesoInicialAbate;
+	private Double pesoVivoAbate;
+	
+	@Column(nullable = false)
+	private Double pesoMortoAbate;	
 
+	private Enum<TipoAbate> tipoAbate;
+	
 	@Column(nullable = false)
 	private Double valorUnitarioAbate;
 
@@ -50,9 +55,13 @@ public class Abate {
 
 	private Double mediaAbate;
 
-	private Double percentualAbate;
+	private Double percentualMortoAbate;
 
-	private Double pesoFinalAbate;
+	private Double percentualVivoAbate;
+
+	private Double pesoFinalVivoAbate;
+
+	private Double pesoFinalMortoAbate;
 
 	private Double descontoAbate;
 
@@ -99,11 +108,11 @@ public class Abate {
 	}
 
 	public Double getPesoInicialAbate() {
-		return pesoInicialAbate;
+		return pesoVivoAbate;
 	}
 
 	public void setPesoInicialAbate(Double pesoInicialAbate) {
-		this.pesoInicialAbate = pesoInicialAbate;
+		this.pesoVivoAbate = pesoInicialAbate;
 	}
 
 	public Double getValorUnitarioAbate() {
@@ -139,19 +148,19 @@ public class Abate {
 	}
 
 	public Double getPercentualAbate() {
-		return percentualAbate;
+		return percentualMortoAbate;
 	}
 
 	public void setPercentualAbate(Double percentualAbate) {
-		this.percentualAbate = percentualAbate;
+		this.percentualMortoAbate = percentualAbate;
 	}
 
 	public Double getPesoFinalAbate() {
-		return pesoFinalAbate;
+		return pesoFinalVivoAbate;
 	}
 
 	public void setPesoFinalAbate(Double pesoFinalAbate) {
-		this.pesoFinalAbate = pesoFinalAbate;
+		this.pesoFinalVivoAbate = pesoFinalAbate;
 	}
 
 	public Double getDescontoAbate() {
@@ -176,6 +185,62 @@ public class Abate {
 
 	public void setCamaraFriaAbate(String camaraFriaAbate) {
 		this.camaraFriaAbate = camaraFriaAbate;
+	}
+
+	public Double getPesoVivoAbate() {
+		return pesoVivoAbate;
+	}
+
+	public void setPesoVivoAbate(Double pesoVivoAbate) {
+		this.pesoVivoAbate = pesoVivoAbate;
+	}
+
+	public Enum<TipoAbate> getTipoAbate() {
+		return tipoAbate;
+	}
+
+	public void setTipoAbate(Enum<TipoAbate> tipoAbate) {
+		this.tipoAbate = tipoAbate;
+	}
+
+	public Double getPesoMortoAbate() {
+		return pesoMortoAbate;
+	}
+
+	public void setPesoMortoAbate(Double pesoMortoAbate) {
+		this.pesoMortoAbate = pesoMortoAbate;
+	}
+
+	public Double getPercentualMortoAbate() {
+		return percentualMortoAbate;
+	}
+
+	public void setPercentualMortoAbate(Double percentualMortoAbate) {
+		this.percentualMortoAbate = percentualMortoAbate;
+	}
+
+	public Double getPercentualVivoAbate() {
+		return percentualVivoAbate;
+	}
+
+	public void setPercentualVivoAbate(Double percentualVivoAbate) {
+		this.percentualVivoAbate = percentualVivoAbate;
+	}
+
+	public Double getPesoFinalVivoAbate() {
+		return pesoFinalVivoAbate;
+	}
+
+	public void setPesoFinalVivoAbate(Double pesoFinalVivoAbate) {
+		this.pesoFinalVivoAbate = pesoFinalVivoAbate;
+	}
+
+	public Double getPesoFinalMortoAbate() {
+		return pesoFinalMortoAbate;
+	}
+
+	public void setPesoFinalMortoAbate(Double pesoFinalMortoAbate) {
+		this.pesoFinalMortoAbate = pesoFinalMortoAbate;
 	}
 	
 }

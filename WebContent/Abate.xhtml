@@ -57,17 +57,23 @@
 				<p:inputText id="valorTotalAbate" size="6" maxlength="6"
 					value="#{AbateBean.Abate.valorTotalAbate}" />
 			</p:panelGrid>
-			<p:panelGrid columns="2" id="paineltable" style="width: 100%">
-				<p:dataTable id="vencimento" editable="true">
-					<p:inputText id="dataVencimento" size="10" maxlength="10"
-						value="#{AbateBean.Abate.dataVencimento}" />
+			<p:dataTable id="vencimento" editable="true" editMode="cell">
+				<f:facet name="header">
+           Vencimento</f:facet>
+				<p:cellEditor>
+					<p:column headerText="Descrição"
+						style="text-align: center; width: 100px">
+						<f:facet name="input">
+							<p:inputText size="32" />
+						</f:facet>
+					</p:column>
+				</p:cellEditor>
+			</p:dataTable>
 
-					<p:inputText id="valor" size="15" maxlength="15"
-						value="#{AbateBean.Abate.valor}" />
-
-				</p:dataTable>
-
-				<!-- 
+			<!-- 
+										<p:inputText id="valor" size="15" maxlength="15"
+								value="#{AbateBean.Abate.valor}" />
+								
 				<p:outputLabel value="Acessórios" for="acessorios" />
 				<p:selectManyCheckbox id="acessorios" styleClass="many-checkbox"
 					value="#{cadastroCarroBean.carro.acessorios}">
@@ -77,7 +83,7 @@
 				</p:selectManyCheckbox>
 				
 				 -->
-			</p:panelGrid>
+
 		</h:form>
 	</ui:define>
 </ui:composition>

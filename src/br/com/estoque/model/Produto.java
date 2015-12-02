@@ -15,7 +15,7 @@ public class Produto {
 	private String descricao;
 
 	@Column(nullable = false)
-	private Enum<Tipo> tipo;
+	private Enum<TipoAnimal> tipo;
 
 	private Double quebraFrio;
 
@@ -39,11 +39,11 @@ public class Produto {
 		this.descricao = descricao;
 	}
 
-	public Enum<Tipo> getTipo() {
+	public Enum<TipoAnimal> getTipo() {
 		return tipo;
 	}
 
-	public void setTipo(Enum<Tipo> tipo) {
+	public void setTipo(Enum<TipoAnimal> tipo) {
 		this.tipo = tipo;
 	}
 
