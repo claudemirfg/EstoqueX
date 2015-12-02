@@ -9,7 +9,7 @@
 
 	<ui:define name="corpo">
 		<f:metadata>
-			<o:viewParam name="abate" value="#{cadastroAbateBean.abate}" />
+			<o:viewParam name="abate" value="#{AbateBean.Abate.abate}" />
 		</f:metadata>
 
 		<h1>Novo abate</h1>
@@ -20,7 +20,7 @@
 			<p:toolbar style="margin-top: 20px">
 				<p:toolbarGroup>
 					<p:commandButton value="Salvar" id="botaoSalvar"
-						action="#{cadastroAbateBean.salvar}" update="frmCadastro" />
+						action="#{AbateBean.Abate.salvar}" update="frmCadastro" />
 				</p:toolbarGroup>
 				<p:toolbarGroup align="right">
 					<p:button value="Pesquisa" outcome="PesquisaAbates.xhtml" />
@@ -30,40 +30,40 @@
 			<p:panelGrid columns="2" id="painel" style="width: 100%"
 				columnClasses="rotulo, campo">
 				<p:outputLabel value="Data" for="dataAbate" />
-				<p:calendar id="dataAbate" value="#{cadastroAbateBean.dataAbate}"
+				<p:calendar id="dataAbate" value="#{AbateBean.Abate.dataAbate}"
 					pattern="dd-MM-yyyy" mask="true" />
 
 				<p:outputLabel value="Produto" for="produtoAbate" />
 				<p:inputText id="produtoAbate" size="60" maxlength="60"
-					value="#{cadastroAbateBean.produtoAbate}" />
+					value="#{AbateBean.Abate.produtoAbate}" />
 
 				<p:outputLabel value="Marchant" for="marchantAbate" />
 				<p:inputText id="marchantAbate" size="60" maxlength="60"
-					value="#{cadastroAbateBean.marchantAbate}" />
+					value="#{AbateBean.Abate.marchantAbate}" />
 
 				<p:outputLabel value="Quantidade" for="quantidadeAbate" />
 				<p:inputText id="quantidadeAbate" size="6" maxlength="6"
-					value="#{cadastroAbateBean.quantidadeAbate}" />
+					value="#{AbateBean.Abate.quantidadeAbate}" />
 
 				<p:outputLabel value="Peso" for="pesoInicialAbate" />
 				<p:inputText id="pesoInicialAbate" size="6" maxlength="6"
-					value="#{cadastroAbateBean.pesoInicialAbate}" />
+					value="#{AbateBean.Abate.pesoInicialAbate}" />
 
 				<p:outputLabel value="Valor" for="valorUnitarioAbate" />
 				<p:inputText id="valorUnitarioAbate" size="6" maxlength="6"
-					value="#{cadastroAbateBean.valorUnitarioAbate}" />
+					value="#{AbateBean.Abate.valorUnitarioAbate}" />
 
 				<p:outputLabel value="Total" for="valorTotalAbate" />
 				<p:inputText id="valorTotalAbate" size="6" maxlength="6"
-					value="#{cadastroAbateBean.valorTotalAbate}" />
+					value="#{AbateBean.Abate.valorTotalAbate}" />
 			</p:panelGrid>
 			<p:panelGrid columns="2" id="paineltable" style="width: 100%">
 				<p:dataTable id="vencimento" editable="true">
 					<p:inputText id="dataVencimento" size="10" maxlength="10"
-						value="#{cadastroAbateBean.dataVencimento}" />
+						value="#{AbateBean.Abate.dataVencimento}" />
 
 					<p:inputText id="valor" size="15" maxlength="15"
-						value="#{cadastroAbateBean.valor}" />
+						value="#{AbateBean.Abate.valor}" />
 
 				</p:dataTable>
 
