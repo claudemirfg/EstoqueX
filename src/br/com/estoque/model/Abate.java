@@ -47,6 +47,9 @@ public class Abate {
 	private Double valorUnitarioAbate;
 
 	@Column(nullable = false)
+	private String tributoAbate;
+	
+	@Column(nullable = false)
 	private Double valorTotalAbate;
 
 	@ElementCollection
@@ -242,5 +245,14 @@ public class Abate {
 	public void setPesoFinalMortoAbate(Double pesoFinalMortoAbate) {
 		this.pesoFinalMortoAbate = pesoFinalMortoAbate;
 	}
+
+	public String getTributo() {
+		return tributoAbate;
+	}
+
+	public void setTributo(String tributo) {
+		this.tributoAbate = tributo;
+	}
+	
 	
 }
